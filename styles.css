@@ -1,0 +1,64 @@
+p {
+    background-color: #ffffff;
+     width: 500px;
+}
+
+h1 {
+    text-align: end;
+}
+
+div p.center {
+    text-align: center !important;
+}
+
+.example .center {
+    text-align: end;
+}
+
+.example{
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 40px;
+    border: 4px solid burlywood;
+}
+
+    
+#force {
+    text-align: left;
+}
+
+.moskal {
+    color: red;
+}
+
+.translator {
+    color: blue;    
+}
+
+.boss {
+    color: yellow;
+}
+
+.enemy-language {
+    font-style: italic;
+}
+
+.soloviina {
+    font-weight: bold;
+}
+
+#start {
+    color: blueviolet;
+}
+
+
+
+.from-step button {
+    background-color: aqua;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 45px;
+}
