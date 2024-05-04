@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>дякую за покупку</h1>
+        <div id="results"></div>
+    </body>
+</html>
+
+<style>
+</style>
+
+<script>
+    const resultlist = document.getElementById('results')
+
+    new URLSearchParams(window.location.search).forEach(
+    (value, name) => {
+        resultlist.append(name + ': ' + value);
+        resultlist.append(document.createElement('br'))
+    }
+
+    )
+</script>

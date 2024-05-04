@@ -2,45 +2,75 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title>Моя сторінка</title>
-        <link rel="stylesheet" href="./styles.css">
+        <title>Flexbox</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-    <body>
-        <center>
-        <h1>Привіт, <i><b>світ</b></i> !!!</h1>
-        </center>
-            <p> Hello world</p>
-            <p> Hello world </p>
-            <img src="https://www.sostav.ru/app/public/images/news/2013/10/07/breaking_bad1.jpeg?rand=0.6037797152530402" alt="dfyjhcgj" width="550px" height="400px"/>
-        <hr>
+    <body>       
+        <div class="products">
+            <div class="product-card">
+                <img id="1" >
+                <h2>Canon</h2>
+                <p>555$</p>
+            </div>
+            <div class="product-card">
+                <img id="2">
+                <h2>Leica III</h2>
+                <p>1550$</p>
+            </div>
+            <div class="product-card">
+                <img id="3">
+                <h2>Пам'ятник лєніну</h2>
+                <p>15000000€</p>
+            </div>
+            <div class="product-card">
+                <img id="4">
+                <h2>Золотий унітаз януковича</h2>
+                <p>14000000€</p>
+            </div>
+        </div> 
+
+        <form action="result.html" method="get">
+            <div class="form-step">
+                <h2>Крок 1: Ваші деталі</h2>
+
+                <!-- Ім'я -->
+                <label for="name">Ім'я</label>
+                <input id="name" type="text" name="name" placeholder="Введіть ім'я">
+    
+                <label for="surname">Прізвище</label>
+                <input id="surname" type="password" name="surname" placeholder="Введіть прізвище">
+    
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Введіть пошту">
+                
+            </div>                    
+            <div class="form-step">
+                <h2>Крок 2: Вибір</h2>
+        
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="subscribe" value="newsletter">Підписатися на Розсилку</label>
+                </div>
             
-             
-<p class="translator soloviina">Криївка УПА. Старшина, перекладач і полонений «стрибок».</p>
-<p id="start" class="translator soloviina">— Спитай москаля, де розташована їхня частина.</p>
-<p class="translator enemy-language">— Руководитель спрашивает вас, где расположена ваша часть.</p>
-<p class="translator enemy-language center">— Я не скажу!</p>
-<p class="moskal soloviina">— Москаль відповів, що не скаже.</p>
-<div class="example">
-     <p class="soloviina">— То скажи, що зараз ми його катуватимемо.</p>
-    <p class="boss enemy-language">— Руководитель говорит, что сейчас вас будут пытать.</p>
-    <p class="boss enemy-language">— Я все равно не скажу!</p>
-    <p class="moskal soloviina">— Москаль каже, що все одно мовчатиме.</p>
-</div>
-<p class="translator soloviina center">— То клич хлопців із жаровенькою й цвяшками.</p>
-<p class="translator">[…]</p>
-<p class="translator enemy-language">— А что это они внесли?</p>
-<p class="enemy-language">— Это жаровня. Сечас в ней раскалят гвозди и загонят их вам под ногти.</p>
-<p class="boss enemy-language">— Нет, нет! Скажите вашему начальнику, что я все расскажу!</p>
-<p class="moskal soloviina">— Що там москаль белькоче?</p>
-<p class="soloviina">— Каже, що москалі тортур не бояться.</p>
+                <div class="radio-group">
+                    <label id="delivery"> Доставка:</label>
+                    <label><input type="radio" name="delivery" value="standard" checked> Стандарт</label>
+                    <label><input type="radio" name="delivery" value="express"> Експрес</label>
+                </div>
 
-
-
-
-
-
-
-
-
+                <label for="commodity">Я хочу купити:</label>
+                <select id="country" name="commodity">
+                    <option value="ynitas">Унітаз</option>
+                    <option value="pamiatnuk">Пам'ятник</option>
+                    <option value="fotic1">Fotoparad1</option>
+                    <option value="fotic2">Fotoparad2</option>
+                    <option value="canada">Канада</option>
+                </select>
+            </div>
+            <div class="form-step">
+                <button type="submit">Купити</button>
+            </div>
+        </form>
     </body>
 </html>
+
+<script src="myscript.js"></script>
