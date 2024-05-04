@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Моя сторінка</title>
+    </head>
+    <body>
+        <h1>Привіт, <i><b>світ</b></i> !!!</h1>
+        <p style="background-color: aquamarine; width: 100px;"> Hello world </p>
+        <img src="https://www.sostav.ru/app/public/images/news/2013/10/07/breaking_bad1.jpeg?rand=0.6037797152530402" alt="dfyjhcgj" width="550px"/>
+    </body>
+</html>
